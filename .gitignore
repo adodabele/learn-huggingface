@@ -8,7 +8,6 @@ docs/
 /notebooks/demos/
 /notebooks/*.safetensors
 
-
 # Models
 *models*
 *.pt*
@@ -26,3 +25,5 @@ nvidia-bug-report.log.gz
 notebooks/smolvlm2-500m-*/
 
 **/*.quarto_ipynb
+
+.env

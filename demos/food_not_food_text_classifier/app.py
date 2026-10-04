@@ -13,7 +13,7 @@ def food_not_food_classifier(text: str) -> Dict[str, float]:
                                         model="mrdbourke/learn_hf_food_not_food_text_classifier-distilbert-base-uncased", # link to model on HF Hub
                                         device="cuda" if torch.cuda.is_available() else "cpu",
                                         top_k=None) # return all possible scores (not just top-1)
-    
+
     # Get outputs from pipeline (as a list of dicts)
     outputs = food_not_food_classifier(text)[0]
 
